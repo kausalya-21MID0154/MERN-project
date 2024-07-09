@@ -1,0 +1,194 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: wheat;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 15px 0;
+  border-radius: 0 0 20px 20px;
+  font-size: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav a,
+nav button {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+span {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center button {
+  margin-left: 40%;
+  margin-right: 50%;
+}
+
+.form-container {
+  background-color: #4ecdc4;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea,
+select {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 3px solid #ff6b6b;
+  border-radius: 10px;
+  width: 500px;
+  font-size: 16px;
+}
+button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 120px;
+  margin-bottom: 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ff8787;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.error {
+  color: #ff4136;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.team-member {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background-color: #7bed9f;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.project-card .actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.project-card .actions a,
+.project-card .actions button {
+  padding: 10px 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-card .actions a {
+  background-color: #3498db;
+  color: white;
+}
+
+.project-card .actions button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.team-member button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.team-member button:hover {
+  background-color: #c0392b;
+}
+
+.filter-controls {
+  margin-bottom: 25px;
+}
+
+.filter-controls button {
+  margin-right: 15px;
+  padding: 12px 20px;
+  background-color: #f39c12;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.filter-controls button:hover {
+  background-color: #d35400;
+  transform: scale(1.05);
+}
